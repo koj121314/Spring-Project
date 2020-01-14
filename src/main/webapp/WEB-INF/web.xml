@@ -7,7 +7,7 @@
 	<!-- root-context.xml을 제일 먼저 읽어들임. -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath:config/spring/root-context.xml</param-value>
+		<param-value>classpath:config/spring/root-ctx.xml</param-value>
 	</context-param>
 	
 	<!-- Creates the Spring Container shared by all Servlets and Filters -->
@@ -23,7 +23,7 @@
 		<init-param>
 		<!-- servlet-context.xml을 그 다음에 읽어들인다.  -->
 			<param-name>contextConfigLocation</param-name>
-			<param-value>classpath:config/spring/servlet-context.xml</param-value>
+			<param-value>classpath:config/spring/servlet-ctx.xml</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>

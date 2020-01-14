@@ -8,8 +8,8 @@
     <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="org.mariadb.jdbc.Driver" />
         <property name="url" value="jdbc:mariadb://localhost:3306/moviecritic" />
-        <property name="username" value="root" />
-        <property name="password" value="js" />
+        <property name="username" value="moviecritic" />
+        <property name="password" value="1111" />
     </bean>
  
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
