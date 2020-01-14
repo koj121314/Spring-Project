@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="MemberDAO">
+	
+		
+	
+	
+	<insert id="insertMember">
+		INSERT INTO MEMBER
+		VALUES(#{id}, #{member_id}, #{member_pw}, #{email}, #{phone_num})
+	
+	</insert>
+
+	<update id="updateMember">
+		UPDATE MEMBER SET MEMBER_PW=#{member_pw}, EMAIL=#{email}, PHONE_NUM=#{phone_num}
+	
+	</update>
+	
+	<delete id="deleteMember" parameterType="String">
+		DELETE FROM MEMBER
+		WHERE MEMBER_ID = #{member_id}
+	</delete>
+
+
+	<select id="selectAllMember" resultType="member">
+		SELECT * FROM MEMBER
+		ORDER BY MEMBER_ID
+	</select>
+	
+	<select id="selectOneMember" resultType="member">
+		SELECT * FROM MEMBER
+		WHERE MEMBER_ID=#{member_id}
+		ORDER BY MEMBER_ID
+	</select>
+
+</mapper>
