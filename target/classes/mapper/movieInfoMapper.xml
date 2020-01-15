@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="movieInfoDAO">
+	<!-- index movie 목록 -->
+	<select id="list" resultType="movieinfo">
+ 		select
+ 			id, title, regDate
+ 		from tbl_movieInfo
+	</select>
+	
+</mapper>

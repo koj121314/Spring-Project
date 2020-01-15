@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -24,6 +25,8 @@ div[id^=movie]{
 	justify-content:center;
 	align-items:center;
 }
+
+
 
 section[id^=board]{
 	margin-left: 100px;
@@ -133,31 +136,25 @@ section[id^=board]{
 
 		<section id="board_now">
 		<h2 class="line">AVAILABLE NOW</h2>
-
-			<article class="line">
-			<h3>movie 1</h3>			
-	
-			</article>
+		<table>
+			<thead>
+				<tr>
+					<th>제목</th>
+					<th>작성일</th>
+				</tr>
+			</thead>
 			
-			<article class="line">
-			<h3>movie 2</h3>			
+			<tbody>
 	
-			</article>		
-
-			<article class="line">
-			<h3>movie 3</h3>		
-	
-			</article>		
-	
-			<article class="line">
-			<h3>movie 4</h3>			
-	
-			</article>		
-
-			<article class="line">
-			<h3>movie 5</h3>			
-	
-			</article>		
+				<c:forEach items="${list}" var="list">
+					<tr>
+						<td>${list.title}</td>
+						<td>${list.regDate}</td>
+					</tr>
+				</c:forEach>
+  		 	</tbody>
+  		 </table>
+			
 			
 		</section>
 		

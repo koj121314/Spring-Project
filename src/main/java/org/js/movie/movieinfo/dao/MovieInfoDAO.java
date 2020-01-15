@@ -1,5 +1,11 @@
 package org.js.movie.movieinfo.dao;
 
-public interface MovieInfoDAO {
+import java.util.List;
 
+import org.js.movie.movieinfo.domain.MovieInfoVO;
+
+public interface MovieInfoDAO {
+	
+	public List<MovieInfoVO> list();
+	
 }
