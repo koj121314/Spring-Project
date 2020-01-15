@@ -1,14 +1,15 @@
 package org.js.movie.member.controller;
 
-import org.js.movie.member.domain.MemberVO;
 import org.js.movie.member.service.MemberService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @Controller
 @RequestMapping("/member/*")
 public class MemberController {
@@ -18,12 +19,16 @@ public class MemberController {
 	@Autowired
 	MemberService memberService;
 	
-	@RequestMapping("/member/signUp.do")
-	public String signUp() {
+	@RequestMapping("/member/sign_up.do")
+	public String getsignUp() {
 		
 		return "member/sign_up";
 	}
 	
+	@RequestMapping("/member/login.do")
+	public String getLogin() {
+		return "member/login";
+	}
 	
 	
 	/*@RequestMapping(value="/register", method = RequestMethod.GET)

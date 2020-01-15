@@ -5,7 +5,9 @@ import java.util.List;
 import org.apache.ibatis.session.SqlSession;
 import org.js.movie.member.domain.MemberVO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
+@Repository("MemberDAO")
 public class MemberDAOImpl implements MemberDAO {
 
 	@Autowired

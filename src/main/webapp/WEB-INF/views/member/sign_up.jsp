@@ -5,116 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Sign Up</title>
+<link rel="stylesheet" type="text/css" href="/resources/css/common.css">
 <style>
-
-#site_layout{
-	margin: -8px;
-	padding : 0;
-}
-
-#top_menu_wrapper{
-	margin:0 auto;
-	
-}
-
-#top_menu{
-	margin:0;
-	width:100%;
-	height:60px;
-	display:flex;
-	justify-content:space-around;
-	align-items:center;
-	background:black;
-
-	
-}
-
-#left_menu{
-	list-style-type:none;
-	
-}
-
-.left_menu{
-	float:left;
-	padding: 0 0 15px 30px;
-	margin-left:auto;
-}
-
-#top_menu2{
-	display:flex;
-	
-}
-
-.right_menu{
-	margin-left:auto;
-	padding-left:15px;
-	
-}
-.top_text1{
-	font-size: 15px;
-	color: white;
-	text-decoration:none;
-	vertical-align:-8px;
-	
-}
-
-#sign_up{
-	background:#f30;
-	
-}
-
-.top_text2{
-	font-size: 15px;
-	color: white;
-	vertical-align:-2px;
-	text-decoration:none;
-	padding-right:15px;
-	
-}
-
-#search{
-	border:none;
-	border-bottom: 3px solid white;
-	background: transparent;
-	height: 25px;
-}
-
-
-#genre_sub{
-	display:none;
-	height: 115px;
-	width:70px;
-	padding:0;
-	margin: 0px;
-	position: absolute;
-	z-index:2;
-	list-style-type:none;
-	text-decoration:none;
-	background-color: #fff;
-	border: 1px solid gray;
-	border-radius: 5px;
-}
-
-
-.left_menu:hover ul#genre_sub {
-	display:block;
-}
-
-.top_text3{
-	text-decoration:none;
-	color:#555;
-	font-size:15px;
-	vertical-align: 8px;
-}
-
-.left_inner_menu{
-	padding: 10px 0 0 5px ;
-}
-
-.left_inner_menu:hover {
-	background: lightblue;
-}
-
 
 #login_box{
 	border : 1px solid lightgray;
@@ -162,8 +54,8 @@ div[id*=_box]{
 	background:black;
 	color:white;
 	width:270px;
-	height:30px;
-	margin: 25px auto;
+	height:35px;
+	margin: 25px 15px;
 	padding-top: 3px;
 }
 
@@ -190,7 +82,7 @@ div[id*=_box]{
 		<ul id="left_menu">
 		
 		<li class="left_menu">		
-		<a href="#"><img src="C:\Users\orc4g\Desktop\image\logo.webp" alt="OpenCritic"></a>
+		<a href="#"><img src="/resources/image/logo.webp" alt="OpenCritic"></a>
 		</li>
 		<li class="left_menu">
 			<a href="#" class="top_text1">Genre</a>
@@ -219,10 +111,10 @@ div[id*=_box]{
 			</div>
 		
 			<div id="login" class="right_menu">
-				<a href="#" class="top_text2">Login</a>
+				<a href="login.do" class="top_text2">Login</a>
 			</div>
 			<div id="sign_up" class="right_menu">
-				<a href="#" class="top_text2">Sign Up</a>
+				<a href="sign_up.do" class="top_text2">Sign Up</a>
 			</div>
 		</nav>
 
@@ -262,7 +154,9 @@ div[id*=_box]{
 
 
 
-	<article id="create_account_btn">Create Account</article>
+	<article>
+		<input type="submit" id="create_account_btn" value="Create Account"/>
+	</article>
 
 	<div id="foot"><span>By clicking Register, you indicate that you have read and understand our Privacy Policy and Terms of Use and represent that you are at least 13 years of age.</span></div>
 

@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.js.movie.member.domain.MemberVO;
 
+
 public interface MemberDAO {
 	
 
