@@ -8,4 +8,6 @@ public interface MovieInfoService {
 	
 	public List<MovieInfoVO> list();
 	
+	public MovieInfoVO view(int id);
+	
 }

@@ -8,4 +8,6 @@ public interface MovieInfoDAO {
 	
 	public List<MovieInfoVO> list();
 	
+	public MovieInfoVO view(int id);
+	
 }

@@ -8,7 +8,14 @@ public class MovieInfoVO {
 	private int id;
 	private String title;
 	private Date regDate;
+	private String summary;
 	
+	public String getSummary() {
+		return summary;
+	}
+	public void setSummary(String summary) {
+		this.summary = summary;
+	}
 	public int getId() {
 		return id;
 	}

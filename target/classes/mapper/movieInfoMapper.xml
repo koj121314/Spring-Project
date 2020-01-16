@@ -8,4 +8,13 @@
  		from tbl_movieinfo
 	</select>
 		
+	<select id="view" parameterType="int" resultType="movieinfoVO">
+		select
+			id, title, summary, regDate
+		from
+			tbl_movieinfo
+		where
+			id = #{id}
+	
+	</select>
 </mapper>

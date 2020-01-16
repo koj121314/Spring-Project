@@ -20,5 +20,11 @@ public class MovieInfoServiceImpl implements MovieInfoService {
 
 		return dao.list();
 	}
+	
+	@Override
+	public MovieInfoVO view(int id) {
+		
+		return dao.view(id);
+	}
 
 }
