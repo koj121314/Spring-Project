@@ -22,7 +22,6 @@ public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String getIndex(Model model) {
 		
-
 		List<MovieInfoVO> list = null;
 		list = service.list();
 		
