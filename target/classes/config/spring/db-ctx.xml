@@ -24,8 +24,8 @@
 
     <context:component-scan base-package="org.js.movie.member.dao"></context:component-scan>
  	<context:component-scan base-package="org.js.movie.member.service"></context:component-scan>
- 	<context:component-scan base-package="org.js.movie.*"></context:component-scan>
- 	
- 	
+ 	<context:component-scan base-package="org.js.movie.movieinfo.dao"></context:component-scan>
+	<context:component-scan base-package="org.js.movie.movieinfo.service"></context:component-scan> 	
+ 	<context:component-scan base-package="org.js.movie.movieinfo.domain"></context:component-scan>
 </beans>
 

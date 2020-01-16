@@ -8,17 +8,17 @@ import org.apache.ibatis.session.SqlSession;
 import org.js.movie.movieinfo.domain.MovieInfoVO;
 import org.springframework.stereotype.Repository;
 
-@Repository("MovieInfoDAO")
+@Repository("MovieInfoDao")
 public class MovieInfoDAOImpl implements MovieInfoDAO {
 	
 	@Inject
-	private SqlSession sqlSession;
+	private SqlSession sql;
 	
-	//index movieinfo 목록
+	
 	@Override
 	public List<MovieInfoVO> list() {
 
-		return sqlSession.selectList("MovieInfoDAO.list");
+		return sql.selectList("MovieInfoMapper.list");
 	}
 
 }
